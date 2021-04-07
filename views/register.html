@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/css/styles2.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Registrate</title>
+</head>
+<body>
+    <header>
+        <section class="topBar">
+            <img class="logo" src=/images/logo-mercado-liebre.svg  alt="Logo" height="40px">
+            <input class="searchBar" type="search" placeholder="Buscar productos"> 
+            <div class="lupe">
+            <span class="fas fa-search"></span>
+            </div>   
+            <p>
+                <span class="fas fa-hand-holding-usd"></span>Comprá en cuotas y sin tarjeta de crédito
+            </p>
+        </section>
+            <nav>
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="menulog">
+                    <li><a href="/views/register.html">Creá tu cuenta
+                        <span class="fas fa-address-card"></span>
+                        </a></li>
+                    <li><a href="/views/login.html">Ingresá
+                        <sapn class="fas fa-sign-in-alt"></sapn>
+                        </a></li>
+                    <li><a href="#">Mis compras
+                        <sapn class="fas fa-shopping-basket"></sapn>
+                        </a></li>
+                </ul>
+            </nav>
+        
+            <i class="fas fa-bars"></i>
+        </header>
+
+    <main>
+        <section class="forms-register">
+        <form action="procesar.php" method="POST" enctype="multipart/form-data">
+                <input class="form-r" type="text" placeholder="Nombre" autofocus autocomplete="off" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter">
+                <input class="form-r" type="text" placeholder="Apellido" autofocus autocomplete="off" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter">
+                <input class="form-r" type="text" placeholder="Nombre de Usuario" pattern="[A-Z0-9]{4,20}" title="Ingrese más de un caracter" >
+                <input class="form-r" type="email" placeholder="E-mail" required>
+                <p>Fecha de Nacimiento</p>
+                <input class="form-r" type="date" placeholder="Mes/Día/Año" required>
+                <input class="form-r" type="text" placeholder="Domicilio" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter">
+                <p>Perfil del Usuario</p>
+            <div class="radio-register">
+            <label><input  type="radio" name="perfil" value="comprador" >  Comprador</label>
+            <label><input  type="radio" name="perfil" value="comprador">Vendedor</label>
+            </div>
+            <p>Intereses</p>
+            <div class="check-register" >
+                    <input type="checkbox" name="electronicos" id="o1" value=""><label for="o1">Electrónicos</label>
+                    <input type="checkbox" name="moda" id="o2" value=""><label for="o2">Moda</label>
+                    <input type="checkbox" name="hogar" id="o3" value=""><label for="o3">Hogar</label>
+                    <input type="checkbox" name="jugueteria" id="o4" value=""><label for="o4">Juguetería</label>
+                    <input type="checkbox" name="vidaSana" id="o5" value=""><label for="o5">Vida sana</label>
+            </div>
+            <p>Elegí tu foto de usuario</p>
+                <input type="file" accept="image/*,video/mp4">
+                <input class="form-r" type="password" placeholder="Elegí tu contraseña" name="usuario" required pattern="[A-Z0-9]{4,20}" title="Ingrese más de un caracter"/>
+            </div>
+            <input class="form-r" type="password" placeholder="Confirmá tu contraseña" name="clave" required pattern="[A-Z0-9]{4,20}" title="Ingrese más de un caracter"/>
+            <input class="send-register" type="submit" value="Enviar"/>      
+            <input class="errase-register" type="reset" value="Borrar"/>
+        </form>
+    </section>
+</main>
+<footer>
+    <section >
+                <div class="father">
+                    <div class="son">
+                <i class="fas fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="parrafo">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                siempre es seguro!</p>
+                    </div>
+                <div class="father">
+                    <div class="son">
+                <i class="fas fa-gift"></i>
+                <h3>Envío gratis desde $2.500</h3>
+                <p class="parrafo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
+            </div>
+                <div class="father">
+                    <div class="son">
+                <i class="fas fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="parrafo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+                    </div>
+            </div>
+    </section>
+     <section>
+        <article>
+            <h5>Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
+        </article>
+    </section>
+</footer>
+</body>
+</html>
