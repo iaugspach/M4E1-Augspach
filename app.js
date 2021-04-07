@@ -19,8 +19,6 @@ app.get('/views/register.html', (req, res) => {
     res.sendFile(path.join(__dirname, './views/register.html'));
 });
 
-app.listen(port, () => {
-    console.log('Example app listening on port '+ port);
+app.listen(process.env.PORT || port, function() => {
+    console.log('App listening on port '+ port);
 });
-
-//Run app, then load http://localhost:port in a browser to see the output.
