@@ -17,3 +17,6 @@ app.get('/views/register.html', (req, res) => {
     res.sendFile(path.join(__dirname, './views/register.html'));
 });
 
+app.listen(port || 3000, function (){
+    console.log('Servidor corriendo en el puerto 3000');
+});
